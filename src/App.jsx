@@ -1,9 +1,12 @@
 import './global.css'
-import { Perfil } from './paginas/Perfil'
+import { BrowserRouter} from 'react-router-dom'
+import { Rotas } from './rotas/Rotas'
 
 export function App() {
   return (
-    <Perfil />
+    <BrowserRouter>
+      <Rotas />
+    </BrowserRouter>
   )
 }
 

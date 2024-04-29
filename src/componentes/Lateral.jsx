@@ -1,4 +1,5 @@
 import estilos from './Lateral.module.css'
+import { Link } from 'react-router-dom'
 
 export function Lateral(){
     return(
@@ -16,6 +17,20 @@ export function Lateral(){
                     <p>Sarah</p>
                 </div>
             </header>
+            <section>
+                <Link className={estilos.botao} to='/inicial'>
+                    Filmes
+                </Link>
+
+                <Link className={estilos.botao} to='perfil'>
+                    Perfil
+                </Link>
+
+                <Link className={estilos.botao} to='sobre'>
+                    Sobre
+                </Link>
+
+            </section>
 
         </aside>
     )

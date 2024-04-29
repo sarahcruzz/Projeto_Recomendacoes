@@ -37,6 +37,8 @@ export function Perfil(){
     return(
         <div className={estilos.conteiner}>
 
+            <p className={estilos.titulo}>Perfil</p>
+
             <form 
                 className={estilos.formulario}
                 onSubmit={handleSubmit(obterDadosFormulario)}
@@ -69,8 +71,7 @@ export function Perfil(){
                     <p className={estilos.mensagem}>{errors.senha.message}</p>
                 )}
 
-
-                <button className={estilos.botao}> Entrar </button>
+                <button className={estilos.botao}> Confirmar </button>
             </form>
         </div>
     )
